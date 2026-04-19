@@ -36,7 +36,13 @@ jobs:
       - name: Build
         env:
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
-        run: npm run build
+        run: |
+          echo "Node version:"
+          node --version
+          echo "npm version:"
+          npm --version
+          echo "Building..."
+          npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
