@@ -1,0 +1,167 @@
+%-------------------------
+% Resume in Latex
+% Author : Giridhar Kumar
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.6in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}
+{\vspace{-3pt}\scshape\raggedright\normalsize\bfseries}
+{}{0em}{}[\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+% Commands
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.12in,label={}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+\item
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1} & \textbf{\small #2} \\
+\textit{#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\small #1} & \textit{\small #2} \\
+\end{tabular*}
+}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \scshape Giridhar Kumar} \\
+
+Bangalore, India \\
+
+\small
+\href{tel:8969485658}{\faPhone\ 8969485658} \quad
+\href{mailto:giridhar.sharma.web@gmail.com}{\faEnvelope\ giridhar.sharma.web@gmail.com
+} \quad
+\href{https://linkedin.com/in/kumar-giridhar}{\faLinkedin\ linkedin.com/in/kumar-giridhar} \quad
+\href{https://github.com/giridhar-bot}{\faGithub\ github.com/giridhar-bot}
+\end{center}
+
+
+
+
+% SUMMARY
+\section{Summary}
+Full Stack Engineer with 4.6+ years of experience building scalable microservices-based enterprise applications using Java, Spring Boot, and React.js. Strong in API design, performance optimization, caching strategies, and distributed workflow automation.
+
+% SKILLS
+\section{Technical Skills}
+\resumeItemListStart
+\resumeItem{\textbf{Frontend:} React.js, Redux, Context API, Material UI, JavaScript, TypeScript, Responsive UI Design}
+\resumeItem{\textbf{Backend:} Java, Spring Boot, Microservices , REST APIs, Redis, SQL, Multithreading, Async Processing, JWT/Spring Security}
+\resumeItem{\textbf{Tools \& Core:} Docker, Git, GitHub Copilot, CI/CD, Postman, Data Structures \& Algorithms, OOP, System Design, DB Indexing,}
+\resumeItemListEnd
+
+% EXPERIENCE
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Capgemini}{Dec 2025 -- Present}
+{Consultant – Full Stack Engineer (Java + React)}{Bangalore, India}
+
+\resumeItemListStart
+\resumeItem{Client: \textbf{Mercedes-Benz Research \& Development India (MBRDI)}}
+\resumeItem{Developing microservices-based IT Controlling platform for financial planning, cost allocation, and IT service billing automation.}
+\resumeItem{Designed REST APIs integrating enterprise workflow (C-FMP → ServCat → Billing4IT) ensuring seamless cross-system data flow.}
+\resumeItem{Reduced manual financial processing efforts by automating approval and billing workflows across multiple internal platforms.}
+\resumeItem{Improved API performance and reliability using async processing and optimized SQL queries.}
+\resumeItem{Built a dynamic Hierarchy Management module with Spring Boot backend and React-based UI for multi-level structures, target mapping, and secure CRUD/batch operations.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Infinite Computer Solutions}{Jul 2021 -- Sept 2025}
+{Software Engineer – Java Full Stack (Java + React  )}{Bangalore, India}
+
+\resumeItemListStart
+\resumeItem{Led end-to-end development of scalable enterprise applications using Java, Spring Boot, and React.js.}
+\resumeItem{Designed and developed RESTful microservices handling billing, order tracking, and reporting workflows serving 15K+ monthly transactions.}
+\resumeItem{Improved backend response time by 40\% using Redis caching, async processing (CompletableFuture), and optimized DB indexing.}
+\resumeItem{Built reusable React component libraries (forms, dashboards, tables) improving UI development speed by 30\%.}
+\resumeItem{Enhanced front-end performance using code splitting, lazy loading, and memoization reducing load time by 40\%.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+% PROJECTS
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubSubheading
+{IT Controlling (ITC) Platform | Mercedes-Benz Research \& Development India}{Dec 2025 -- Present}
+\resumeItemListStart
+\resumeItem{Enterprise financial management platform enabling IT service planning, cost allocation, and billing automation.}
+\resumeItem{Improved financial process automation and reduced manual intervention through system integration.}
+\resumeItemListEnd
+\resumeSubSubheading
+{Enterprise Customer Portal | Brightspeed}{Mar 2024 -- Sept 2025}
+\resumeItemListStart
+\resumeItem{Built scalable portal handling 15K+ monthly transactions (billing, orders, ticketing) using Spring Boot microservices and React.}
+\resumeItem{Optimized APIs and DB queries improving performance and ensuring secure role-based access control.}
+\resumeItemListEnd
+
+
+\resumeSubSubheading
+{Smart Analytics System | Verizon}{Jul 2022 -- Feb 2024}
+\resumeItemListStart
+\resumeItem{Developed real-time 4G/5G network analytics dashboards with optimized backend APIs and interactive visualization.}
+\resumeItem{Improved large dataset rendering performance through efficient data-fetching and query tuning.}
+\resumeItemListEnd
+
+
+\resumeSubSubheading
+{Drone Monitoring Platform | Qualcomm}{Aug 2021 -- Jun 2022}
+\resumeItemListStart
+\resumeItem{Engineered real-time telemetry processing system with map-based live tracking and backend data services.}
+\resumeItem{Designed scalable REST APIs supporting concurrent data ingestion and monitoring workflows.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% CERTIFICATIONS
+\section{Certifications}
+\resumeItemListStart
+\resumeItem{\href{https://www.hackerrank.com/certificates/iframe/24f069b86e78}{Front-end Developer (React) – HackerRank (Jun 2024)}}
+\resumeItem{\href{https://www.hackerrank.com/certificates/iframe/797ced8fb9ab}{Java (Basic) Certificate – HackerRank (Oct 2024)}}
+\resumeItemListEnd
+
+% ACHIEVEMENTS
+\section{Achievements}
+\resumeItemListStart
+\resumeItem{Performer of the Month (Jul 2023): Recognized for redesigning legacy UI layouts achieving 100\% responsiveness.}
+\resumeItemListEnd
+
+\end{document}

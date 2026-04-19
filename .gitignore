@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+coverage/
+
+# Vite
+.vite/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# LaTeX generated artifacts
+resume-latex/*.aux
+resume-latex/*.fdb_latexmk
+resume-latex/*.fls
+resume-latex/*.log
+resume-latex/*.out
+resume-latex/*.synctex.gz
+resume-latex/*.toc
+resume-latex/*.lof
+resume-latex/*.lot
+resume-latex/*.nav
+resume-latex/*.snm
+resume-latex/*.vrb
+resume-latex/*.xdv
+resume-latex/*.gz
+resume-latex/*.blg
+resume-latex/*.bbl
+resume-latex/*.bcf
+resume-latex/*.run.xml
+
+# Keep source and exported public PDF
+!resume-latex/main.tex
+!public/Giridhar_Kumar_Resume.pdf

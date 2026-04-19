@@ -1,0 +1,45 @@
+GIRIDHAR KUMAR
+Bangalore, India
+Phone: +91 8969485658
+Email: giridhar.sharma.web@gmail.com
+LinkedIn: https://linkedin.com/in/kumar-giridhar
+GitHub: https://github.com/giridhar-bot
+
+SUMMARY
+Full Stack Engineer with 4.8+ years of experience in Java, Spring Boot, and React.js, building scalable microservices with a strong focus on system design, performance optimization, and caching.
+
+TECHNICAL SKILLS
+Frontend: React.js, Redux, Context API, Material UI, JavaScript, TypeScript, Responsive UI
+Backend: Java, Spring Boot, Microservices, REST APIs, Redis, SQL, Multithreading, JWT, Spring Security
+DevOps & Core: Docker, CI/CD, Jenkins, Git, DSA, OOP, System Design (HLD/LLD), Caching, DB Indexing
+
+EXPERIENCE
+Capgemini | Consultant – Full Stack Engineer (Java + React)
+Dec 2025 – Present | Bangalore, India
+Client: Mercedes-Benz Research & Development India (MBRDI)
+- Built microservices-based IT Controlling platform for financial planning, cost allocation, and billing automation.
+- Developed REST APIs integrating enterprise workflows (C-FMP -> ServCat -> Billing4IT) ensuring seamless data flow.
+- Engineered auto/manual Work Hierarchy sync (12 AM scheduler) with structure preservation and auto-correction of misplaced nodes.
+- Built dynamic Hierarchy Management module with multi-level mapping, secure CRUD, and batch operations using Spring Boot and React.
+
+Infinite Computer Solutions | Software Engineer – Java Full Stack (Java + React)
+Jul 2021 – Sept 2025 | Bangalore, India
+- Led end-to-end development of scalable enterprise applications using Java, Spring Boot, and React.js.
+- Designed and developed microservices for billing, order tracking, and reporting workflows processing 15K+ monthly transactions.
+- Reduced backend response time by 40% using Redis caching, async processing, and DB indexing optimization.
+- Built reusable React component libraries improving development speed by 30%.
+- Enhanced frontend performance using code splitting, lazy loading, and memoization reducing load time by 40%.
+
+PROJECTS
+1) Enterprise & Wholesale Customer Portal — Brightspeed
+2) Smart Analytics System (4G/5G Monitoring Platform) — Verizon
+3) Drone Management & Surveillance System — Qualcomm
+4) IT Controlling (ITC) Platform — Mercedes-Benz
+5) OHC Generic Hierarchy Management Tool — Mercedes-Benz
+
+CERTIFICATIONS
+- Front-end Developer (React) – HackerRank (Jun 2024)
+- Java (Basic) Certificate – HackerRank (Oct 2024)
+
+ACHIEVEMENTS
+- Performer of the Month (Jul 2023): Recognized for redesigning UI achieving 100% responsiveness.

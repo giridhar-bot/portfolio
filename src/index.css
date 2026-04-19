@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(124, 58, 237, 0.3) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(124, 58, 237, 0.3);
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 58, 237, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Light theme overrides */
+.light body,
+html.light body {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(0, 212, 255, 0.2);
+  color: #fff;
+}
+
+/* Glassmorphism utility */
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-heavy {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+  }
+
+  .neon-border {
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.15),
+                inset 0 0 15px rgba(0, 212, 255, 0.05);
+  }
+}
+
+/* Smooth page transitions */
+section {
+  position: relative;
+}
+
+/* Focus visible styles */
+:focus-visible {
+  outline: 2px solid rgba(0, 212, 255, 0.5);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
