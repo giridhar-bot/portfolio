@@ -31,14 +31,10 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install --omit=dev
+        run: npm install
 
       - name: Build
-        run: |
-          echo "Node version: $(node --version)"
-          echo "npm version: $(npm --version)"
-          echo "Building application..."
-          npx tsc --noEmit && npx vite build
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
