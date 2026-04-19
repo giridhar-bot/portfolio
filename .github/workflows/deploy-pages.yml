@@ -34,19 +34,11 @@ jobs:
         run: npm install --omit=dev
 
       - name: Build
-        env:
-          VITE_BASE_PATH: /${{ github.event.repository.name }}/
         run: |
-          echo "Node version:"
-          node --version
-          echo "npm version:"
-          npm --version
-          echo "TypeScript version:"
-          npx tsc --version
-          echo "Running TypeScript check..."
-          npx tsc --noEmit
-          echo "Running Vite build..."
-          npx vite build
+          echo "Node version: $(node --version)"
+          echo "npm version: $(npm --version)"
+          echo "Building application..."
+          npx tsc --noEmit && npx vite build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
