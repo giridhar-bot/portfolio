@@ -62,7 +62,7 @@ export default function Hero() {
   }, [displayText, isDeleting, phraseIndex]);
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background gradient orbs */}
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-neon-blue/20 rounded-full blur-[128px] animate-float" />
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-neon-purple/20 rounded-full blur-[128px] animate-float" style={{ animationDelay: '3s' }} />
@@ -80,24 +80,14 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
         {/* Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.05] border border-white/10 backdrop-blur-sm mb-8"
-        >
-          <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-          <span className="text-sm text-gray-300">Available for opportunities</span>
-        </motion.div>
-
         {/* Main heading */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6"
+          className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6"
         >
-          <span className="block text-white text-3xl md:text-4xl lg:text-5xl mb-2">Giridhar Kumar</span>
+          <span className="block text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2">Giridhar Kumar</span>
           <span className="block bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink bg-[length:200%_auto] animate-gradient-x bg-clip-text text-transparent">
             Java Full Stack Developer
           </span>
@@ -120,7 +110,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-sm sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed px-2"
         >
           Building enterprise-grade applications with{' '}
           <span className="text-neon-blue font-medium">React</span>,{' '}
@@ -136,7 +126,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="inline-block mb-10"
         >
-          <div className="bg-dark-800/80 backdrop-blur-xl border border-white/10 rounded-xl p-4 px-6 font-mono text-sm text-left">
+          <div className="bg-dark-800/80 backdrop-blur-xl border border-white/10 rounded-xl p-3 sm:p-4 px-4 sm:px-6 font-mono text-xs sm:text-sm text-left max-w-full overflow-x-auto">
             <div className="flex items-center gap-2 mb-3">
               <span className="w-3 h-3 rounded-full bg-red-500/80" />
               <span className="w-3 h-3 rounded-full bg-yellow-500/80" />
@@ -146,7 +136,7 @@ export default function Hero() {
               initial={{ width: 0 }}
               animate={{ width: '100%' }}
               transition={{ duration: 1.5, delay: 0.8, ease: 'easeInOut' }}
-              className="overflow-hidden whitespace-nowrap"
+              className="overflow-hidden whitespace-nowrap text-xs sm:text-sm"
             >
               <span className="text-neon-purple">const</span>{' '}
               <span className="text-neon-blue">developer</span>{' '}
@@ -176,7 +166,7 @@ export default function Hero() {
             whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(0,212,255,0.3)' }}
             whileTap={{ scale: 0.95 }}
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold text-sm shadow-lg shadow-neon-blue/20 hover:shadow-neon-blue/40 transition-shadow"
+            className="px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold text-xs sm:text-sm shadow-lg shadow-neon-blue/20 hover:shadow-neon-blue/40 transition-shadow"
           >
             View Projects
           </motion.button>
@@ -185,7 +175,7 @@ export default function Hero() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={handleResumeDownload}
-            className="px-8 py-3.5 rounded-xl bg-white/[0.05] border border-white/10 hover:bg-white/[0.1] text-white font-semibold text-sm flex items-center gap-2 transition-colors"
+            className="px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl bg-white/[0.05] border border-white/10 hover:bg-white/[0.1] text-white font-semibold text-xs sm:text-sm flex items-center gap-2 transition-colors"
           >
             <FiDownload className="w-4 h-4" />
             Download Resume

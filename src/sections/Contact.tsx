@@ -45,7 +45,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Email</p>
-                  <p className="text-gray-300 font-medium">giridhar.sharma.web@gmail.com</p>
+                  <p className="text-gray-300 font-medium text-sm sm:text-base break-all sm:break-normal">giridhar.sharma.web@gmail.com</p>
                 </div>
               </div>
 
@@ -164,10 +164,9 @@ export default function Contact() {
           className="mt-20 pt-8 border-t border-white/5 text-center"
         >
           <p className="text-gray-600 text-sm">
-            Designed & Built with{' '}
-            <span className="text-neon-pink">♥</span> using React, TypeScript & Tailwind CSS
+            Designed & Developed by{' '}
+            <span className="text-neon-blue font-medium">Giridhar Kumar</span>
           </p>
-          <p className="text-gray-700 text-xs mt-2">© 2026 All rights reserved</p>
         </motion.div>
       </div>
     </section>

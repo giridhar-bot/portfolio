@@ -139,10 +139,10 @@ export default function SystemDesign() {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.12, duration: 0.5 }}
                 >
-                  <div className="flex items-stretch gap-4">
+                  <div className="flex flex-col sm:flex-row items-stretch gap-2 sm:gap-4">
                     {/* Layer label */}
                     <div
-                      className="w-36 flex-shrink-0 p-3 rounded-lg flex items-center justify-center text-center text-sm font-semibold"
+                      className="w-full sm:w-36 flex-shrink-0 p-2 sm:p-3 rounded-lg flex items-center justify-center text-center text-xs sm:text-sm font-semibold"
                       style={{
                         backgroundColor: `${layer.color}10`,
                         borderLeft: `3px solid ${layer.color}`,
