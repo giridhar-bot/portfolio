@@ -24,8 +24,8 @@ export default function App() {
   }, []);
 
   return (
-    <div className={isDark ? 'dark' : 'light'}>
-      <div className={`min-h-screen transition-colors duration-300 ${isDark ? 'bg-dark-900 text-white' : 'bg-slate-50 text-slate-900'}`}>
+    <div className={`${isDark ? 'dark' : 'light'} overflow-x-hidden`}>
+      <div className={`min-h-screen transition-colors duration-300 overflow-x-hidden ${isDark ? 'bg-dark-900 text-white' : 'bg-slate-50 text-slate-900'}`}>
         <AnimatePresence mode="wait">
           {isLoading ? (
             <LoadingScreen key="loading" onComplete={handleLoadingComplete} />
